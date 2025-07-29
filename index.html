@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RefkaBot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Chat Container -->
+    <div class="chat-container" id="chat-container">
+        <div class="chat-header">
+            <div class="profile-section">
+                <div class="profile-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="profile-info">
+                    <h2>Rafka|Bot</h2>
+                    <!-- Status indicator moved here -->
+                    <div class="status-indicator">
+                        <div class="status-dot"></div>
+                        <span>Online</span>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-actions">
+                <div class="chat-time" id="current-time">--:--</div>
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="chat-messages" id="chat-messages">
+            <div class="message bot-message">
+                Halo! Saya Rafka|Bot. Ada yang bisa saya bantu?
+            </div>
+            <div class="welcome-message">
+                Tanya apa Saja
+            </div>
+        </div>
+
+        <div class="quick-options" id="quick-options">
+            <button class="quick-option" data-question="nama kamu siapa?">Nama kamu siapa?</button>
+            <button class="quick-option" data-question="usia kamu berapa?">Usia berapa?</button>
+            <button class="quick-option" data-question="sekolah dimana?">Sekolah dimana?</button>
+            <button class="quick-option" data-question="kemampuan kamu apa?">Kemampuan kamu?</button>
+        </div>
+
+        <div class="chat-input-container">
+            <input type="text" class="message-input" id="message-input" placeholder="Ketik pesan..." autocomplete="off">
+            <button class="send-btn" id="send-btn">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
